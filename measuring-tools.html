@@ -50,6 +50,10 @@ body{display:flex;flex-direction:column;overflow:hidden}
 ::-webkit-scrollbar-corner{background:transparent}
 @supports not selector(::-webkit-scrollbar){ *{scrollbar-width:thin;scrollbar-color:#2c2f34 transparent} }
 </style>
+<script>/* no right-click, view-source (Ctrl+U) or dev tools (Ctrl+Shift+I) */
+document.addEventListener('contextmenu',function(e){e.preventDefault();});
+document.addEventListener('keydown',function(e){var k=(e.key||'').toLowerCase();if((e.ctrlKey||e.metaKey)&&(k==='u'||(e.shiftKey&&k==='i')))e.preventDefault();},true);
+</script>
 </head>
 <body>
 <header class="site-head" role="banner"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">google.com ↗</a></header>
